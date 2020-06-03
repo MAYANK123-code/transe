@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> TRANSPARENT WEB FORM </title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body{
+          margin:0;
+          padding:0;
+          background-image: url("hill.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          font-family: sans-serif;
+    }
+    .loginbox{
+          width:320px;
+          height: 420px;
+          background: rgba(0,0,0,0.5);
+          color: royalblue;
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%,-50%);
+          box-sizing: border-box;
+          padding: 30px 30px;
+    }
+    .cool{
+          width:100px;
+          height: 100px;
+          border-radius: 50%;
+          position:absolute;
+          top:-50px;
+          left:-50px;
+
+    }
+    h1{
+          margin: 0;
+          padding: 0 0 20px;
+          text-align: center;
+          font-size: 20px;
+    }
+    .loginbox p{
+          margin: 0;
+          padding: 0;
+          font-weight: bold;   
+    }
+    .loginbox input{
+          width: 100%;
+          margin-bottom: 200px;
+
+    }
+    .loginbox input[type="text"], input[type="password"]{
+          border:none;
+          border-bottom: 1px solid red;
+          background: transparent;
+          outline: none;
+          height: 40px;
+          color:yellow;
+          font-size: 16px;
+    }
+
+  </style>
+  </head>
+<body>
+  <div class="loginbox">
+    <img src="blacknwhite.jpg"  class="cool"/>
+    <h1>Login HERE</h1>
+    <form action="https://www.mokart.com" method="POST">
+     <p>Username</p>
+     <input type="text" name="username" placeholder="Feel free to ENTER">
+     <p>Password</p>
+     <input type="password" name="password" placeholder="Enter secret code">
+     <input type="submit" name="submit" value="login">
+    
+    </form>
+
+  </div>
+</body>
+</html>
